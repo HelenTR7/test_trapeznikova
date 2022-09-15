@@ -3,7 +3,8 @@ function rangeSlider(wrapper) {
         currentValue = wrapper.querySelectorAll('.no-ui-slider__value')[0],
         minValue = wrapper.getAttribute('data-min'),
         maxValue = wrapper.getAttribute('data-max'),
-        startValue = [wrapper.getAttribute('data-from'),wrapper.getAttribute('data-to')];
+        startValue = [wrapper.getAttribute('data-from'),wrapper.getAttribute('data-to')],
+        hiddenInput = wrapper.querySelectorAll('.no-ui-slider__input')[0];
 
     noUiSlider.create(stepsSlider, {
         start: startValue,
@@ -18,6 +19,7 @@ function rangeSlider(wrapper) {
 
     stepsSlider.noUiSlider.on('update', function (values, handle) {
         currentValue.innerHTML = `${values[1].split('.')[0]}%`;
+        hiddenInput.setAttribute('value', values[1].split('.')[0]);
     });
 
     return stepsSlider;
@@ -45,11 +47,17 @@ function customSelect(wrapper) {
             selectBody.classList.remove('active');
         })
     });
+
+    document.addEventListener('click', function (ev) {
+        if(ev.target.classList.contains('custom-select__head')) return;
+        selectHead.classList.remove('active');
+        selectBody.classList.remove('active');
+    })
 }
 
 function customFile(wrapper) {
     let fileInput = wrapper.querySelectorAll('input')[0],
-        fileName = wrapper.querySelectorAll('.custom-file__name')[0]
+        fileName = wrapper.querySelectorAll('.custom-file__name')[0];
 
     fileInput.addEventListener('change', function () {
         fileName.innerHTML = this.files[0].name;

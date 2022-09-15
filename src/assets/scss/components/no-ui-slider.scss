@@ -19,6 +19,9 @@
     font-size: 18px;
     color: $c-white;
   }
+  &__input {
+    display: none;
+  }
   &__ranges {}
 }
 

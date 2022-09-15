@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Test Trapeznikova</title>
+    <!-- 400 600 700 800 -->
+    <link rel="preload" href="./assets/fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Lato-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/Lato-Heavy.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/index.html" class="header__logo">
+                    <img src="./assets/imgs/logo.svg" alt="lorem logo">
+                </a>
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li>
+                            <a href="#" class="active">Бизнес</a>
+                        </li>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Цены</a>
+                        </li>
+                        <li>
+                            <a href="#">Оформить заказ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero" style="background-image: url('./assets/imgs/hero.jpg')">
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__title">
+                        <span>Lorem ipsum</span> dolor sit<br> amet consectetur <span>adipiscing</span>
+                    </h1>
+                    <div class="hero__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</div>
+                    <ul class="hero__list">
+                        <li>Totam rem aperiam eaque ipsa</li>
+                        <li>Sit voluptatem accusantium doloremque laudantium</li>
+                        <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+                    </ul>
+                    <div class="hero__btns">
+                        <button class="btn btn--primary">Заказать</button>
+                        <a href="#" class="btn btn--light">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ordering" style="background-image: url('./assets/imgs/ordering.png')">
+            <div class="container">
+                <div class="ordering__title">Оформление <span>заказа</span></div>
+                <div class="ordering__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</div>
+                <div class="ordering__scheme">
+                    <div class="scheme-item">
+                        <div class="scheme-item__icon">
+                            <img src="./assets/imgs/i-1.svg" alt="ordering">
+                        </div>
+                        <div class="scheme-item__title">Lorem ipsum dolor sit amet</div>
+                    </div>
+                    <div class="scheme-item">
+                        <div class="scheme-item__icon">
+                            <img src="./assets/imgs/i-2.svg" alt="ordering">
+                        </div>
+                        <div class="scheme-item__title">Сonsecteturadipiscing elit</div>
+                    </div>
+                    <div class="scheme-item">
+                        <div class="scheme-item__icon">
+                            <img src="./assets/imgs/i-3.svg" alt="ordering">
+                        </div>
+                        <div class="scheme-item__title">Sed do eiusmod tempor</div>
+                    </div>
+                    <div class="scheme-item">
+                        <div class="scheme-item__icon">
+                            <img src="./assets/imgs/i-4.svg" alt="ordering">
+                        </div>
+                        <div class="scheme-item__title">Esse cillum dolore eu fugiat</div>
+                    </div>
+                    <div class="scheme-item">
+                        <div class="scheme-item__icon">
+                            <img src="./assets/imgs/i-5.svg" alt="ordering">
+                        </div>
+                        <div class="scheme-item__title">Excepteur sint occaecat cupidatat non proident</div>
+                    </div>
+                </div>
+                <form action="#" class="ordering__form">
+                    <div class="custom-select js-custom-select">
+                        <div class="custom-select__head">Выберите тип системы</div>
+                        <div class="custom-select__body">
+                            <div class="custom-select__body-inner">
+                                <label>
+                                    <input type="radio" value="sed_ut" name="system_type" data-name="Sed ut perspiciatis">
+                                    <span>Sed ut perspiciatis</span>
+                                </label>
+                                <label>
+                                    <input type="radio" value="nemo" name="system_type" data-name="Nemo enim ipsam">
+                                    <span>Nemo enim ipsam</span>
+                                </label>
+                                <label>
+                                    <input type="radio" value="et" name="system_type" data-name="Et harum quidem">
+                                    <span>Et harum quidem</span>
+                                </label>
+                                <label>
+                                    <input type="radio" value="temp" name="system_type" data-name="Temporibus autem">
+                                    <span>Temporibus autem</span>
+                                </label>
+                                <label>
+                                    <input type="radio" value="itaq" name="system_type" data-name="Itaque earum rerum">
+                                    <span>Itaque earum rerum</span>
+                                </label>
+                                <label>
+                                    <input type="radio" value="sed_ut2" name="system_type" data-name="Sed ut perspiciatis">
+                                    <span>Sed ut perspiciatis</span>
+                                </label>
+                                <label>
+                                    <input type="radio" value="nemo2" name="system_type" data-name="Nemo enim ipsam">
+                                    <span>Nemo enim ipsam</span>
+                                </label>
+                                <label>
+                                    <input type="radio" value="et2" name="system_type" data-name="Et harum quidem">
+                                    <span>Et harum quidem</span>
+                                </label>
+                                <label>
+                                    <input type="radio" value="temp2" name="system_type" data-name="Temporibus autem">
+                                    <span>Temporibus autem</span>
+                                </label>
+                                <label>
+                                    <input type="radio" value="itaq2" name="system_type" data-name="Itaque earum rerum">
+                                    <span>Itaque earum rerum</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Ваш e-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                    </div>
+                    <div class="no-ui-slider js-no-ui-slider" data-min="0" data-max="100" data-from="0" data-to="75">
+                        <div class="no-ui-slider__top">
+                            <div class="no-ui-slider__title">Sed ut perspiciatis, unde omnis iste natus</div>
+                            <span class="no-ui-slider__value">75%</span>
+                        </div>
+                        <div class="no-ui-slider__ranges"></div>
+                    </div>
+                    <div class="custom-file js-custom-file">
+                        <input type="file" name="file">
+                        <div class="custom-file__btn btn">
+                            <svg class="icon">
+                                <use xlink:href="./assets/imgs/sprite.svg#i-file"></use>
+                            </svg>
+                            <span>Прикрепить файл</span>
+                        </div>
+                        <div class="custom-file__name"></div>
+                    </div>
+                    <div></div>
+                    <div class="ordering__form-btn">
+                        <button type="submit" class="btn btn--primary">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copy">© 2018 «LoremIpsum.net» Все права защищены.</div>
+                <span class="footer__sep"></span>
+                <div class="footer__pay">
+                    <div class="pay-item">
+                        <svg class="icon pay-item__icon">
+                            <use xlink:href="./assets/imgs/sprite.svg#i-qiwi"></use>
+                        </svg>
+                        <span class="pay-item__title">Qiwi wallet</span>
+                    </div>
+                    <div class="pay-item">
+                        <svg class="icon pay-item__icon">
+                            <use xlink:href="./assets/imgs/sprite.svg#i-yandex"></use>
+                        </svg>
+                        <span class="pay-item__title">Yandex Money</span>
+                    </div>
+                    <div class="pay-item">
+                        <svg class="icon pay-item__icon">
+                            <use xlink:href="./assets/imgs/sprite.svg#i-web-money"></use>
+                        </svg>
+                        <span class="pay-item__title">Web Money</span>
+                    </div>
+                </div>
+                <span class="footer__sep"></span>
+                <div class="footer__social">
+                    <a href="mailto:info@ipsum228.com" class="social-item">
+                        <svg class="icon social-item__icon" style="width: 15px; height: 12px">
+                            <use xlink:href="./assets/imgs/sprite.svg#i-mail"></use>
+                        </svg>
+                        <span class="social-item__title">info@ipsum228.com</span>
+                    </a>
+                    <a href="https://vk.com" class="social-item" target="_blank">
+                        <svg class="icon social-item__icon" style="width: 11px; height: 13px">
+                            <use xlink:href="./assets/imgs/sprite.svg#i-vk"></use>
+                        </svg>
+                        <span class="social-item__title">Мы вконтакте</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./assets/js/vendors.min.js"></script>
+    <script src="./assets/js/app-min.js"></script>
+</body>
+</html>

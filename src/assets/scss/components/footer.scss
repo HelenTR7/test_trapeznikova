@@ -1,0 +1,111 @@
+@import "../main/vars";
+
+.footer {
+  background: #3D4050;
+  padding: 30px 0;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__copy {
+    font-size: 13px;
+    color: $c-white;
+  }
+  &__pay {
+    display: flex;
+    align-items: center;
+    margin: 0 -15px;
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    margin: 0 -15px;
+  }
+  &__sep {
+    height: 18px;
+    width: 1px;
+    display: block;
+    background: #C3C3C3;
+  }
+}
+
+.pay-item {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    height: 20px;
+    width: 20px;
+  }
+  &__title {
+    padding-left: 10px;
+    font-size: 13px;
+    color: #C3C3C3;
+  }
+}
+.social-item {
+  padding: 0 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: $c-white;
+  transition: color 0.4s;
+
+  &:hover {
+    text-decoration: none;
+    color: $c-primary;
+  }
+
+  &__icon {}
+  &__title {
+    letter-spacing: 0.03em;
+    padding-left: 17px;
+    font-size: 13px;
+  }
+}
+
+// 1259.75
+@media (max-width: $lg) {
+  .footer {
+    &__copy {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__copy + .footer__sep {
+      display: none;
+    }
+  }
+}
+// 991.75
+@media (max-width: $md) {}
+// 767.75
+@media (max-width: $sm) {
+  .footer {
+    &__sep {
+      display: none;
+    }
+    &__pay {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__social {
+      width: 100%;
+    }
+  }
+
+  .pay-item {
+    &__title {
+      padding-left: 5px;
+      font-size: 12px;
+    }
+  }
+  .social-item {
+    &__title {
+      padding-left: 5px;
+      font-size: 12px;
+    }
+  }
+}
